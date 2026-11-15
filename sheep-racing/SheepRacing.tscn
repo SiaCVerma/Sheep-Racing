@@ -11,7 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
 [ext_resource type="Texture2D" uid="uid://xvwpcob603iw" path="res://Sheep Body 3.png" id="9_appnl"]
 [ext_resource type="Texture2D" uid="uid://bt68t8ub7qep3" path="res://Sheep Head 3.png" id="10_6dkih"]
+<<<<<<< HEAD
+[ext_resource type="Script" uid="uid://efdqd82ixl20" path="res://sheep_3.gd" id="10_eno16"]
+=======
 [ext_resource type="Script" uid="uid://cjc2hot3anry0" path="res://label.gd" id="12_eno16"]
+>>>>>>> 9300eca0d54c952779dbf0b983abfd7e90c7c1bf
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
 size = Vector2(50.017357, 50.01548)
@@ -67,6 +71,7 @@ scale = Vector2(1, 0.99999994)
 texture = ExtResource("7_snn4q")
 
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
+script = ExtResource("10_eno16")
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
 position = Vector2(400.00003, 495)
@@ -86,5 +91,8 @@ offset_right = 208.0
 offset_bottom = 27.0
 text = "Time: 0 seconds"
 script = ExtResource("12_eno16")
+
+[node name="RestartNode" type="Node2D" parent="." unique_id=1838893094]
+position = Vector2(483, 469)
 
 [connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
