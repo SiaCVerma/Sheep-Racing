@@ -36,30 +36,36 @@ position = Vector2(559.00006, 312)
 scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
 
-[node name="Sheep Body" type="Sprite2D" parent="." unique_id=1439060913 groups=["Sheep"]]
+[node name="Sheep 1" type="CharacterBody2D" parent="." unique_id=792658849]
+
+[node name="Sheep Body 1" type="Sprite2D" parent="Sheep 1" unique_id=1439060913 groups=["Sheep"]]
 position = Vector2(520, 415.99997)
 scale = Vector2(0.1465755, 0.14266665)
 texture = ExtResource("4_bfwgu")
 script = ExtResource("5_mihmo")
 
-[node name="Sheep Head" type="Sprite2D" parent="Sheep Body" unique_id=1165322609 groups=["Sheep"]]
+[node name="Sheep Head 1" type="Sprite2D" parent="Sheep 1/Sheep Body 1" unique_id=1165322609 groups=["Sheep"]]
 position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
-[node name="Sheep Body 2" type="Sprite2D" parent="." unique_id=552016128]
+[node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1480619618]
+
+[node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
 position = Vector2(410, 451)
 scale = Vector2(0.3544776, 0.25733334)
 texture = ExtResource("6_mihmo")
 
-[node name="Sheep Head 2" type="Sprite2D" parent="Sheep Body 2" unique_id=770454328]
+[node name="Sheep Head 2" type="Sprite2D" parent="Sheep 2/Sheep Body 2" unique_id=770454328]
 position = Vector2(-198, -131)
 texture = ExtResource("7_snn4q")
 
-[node name="Sheep Body 3" type="Sprite2D" parent="." unique_id=808177148]
+[node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=577569215]
+
+[node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
 position = Vector2(742, 752)
 texture = ExtResource("9_appnl")
 
-[node name="Sheep Head 3" type="Sprite2D" parent="Sheep Body 3" unique_id=991186293]
+[node name="Sheep Head 3" type="Sprite2D" parent="Sheep 3/Sheep Body 3" unique_id=991186293]
 position = Vector2(-109, -152)
 texture = ExtResource("10_6dkih")
 
