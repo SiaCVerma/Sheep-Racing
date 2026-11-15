@@ -36,10 +36,15 @@ position = Vector2(559.00006, 312)
 scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
 
+<<<<<<< HEAD
 [node name="Sheep 1" type="CharacterBody2D" parent="." unique_id=792658849]
 
 [node name="Sheep Body 1" type="Sprite2D" parent="Sheep 1" unique_id=1439060913 groups=["Sheep"]]
 position = Vector2(520, 415.99997)
+=======
+[node name="Sheep Body" type="Sprite2D" parent="." unique_id=1439060913 groups=["Sheep"]]
+position = Vector2(520, 416.99994)
+>>>>>>> d9e52541083cea5713c0e40f9dd8fa550df29f5d
 scale = Vector2(0.1465755, 0.14266665)
 texture = ExtResource("4_bfwgu")
 script = ExtResource("5_mihmo")
@@ -48,10 +53,15 @@ script = ExtResource("5_mihmo")
 position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
+<<<<<<< HEAD
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1480619618]
 
 [node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
 position = Vector2(410, 451)
+=======
+[node name="Sheep Body 2" type="Sprite2D" parent="." unique_id=552016128]
+position = Vector2(411, 460)
+>>>>>>> d9e52541083cea5713c0e40f9dd8fa550df29f5d
 scale = Vector2(0.3544776, 0.25733334)
 texture = ExtResource("6_mihmo")
 
