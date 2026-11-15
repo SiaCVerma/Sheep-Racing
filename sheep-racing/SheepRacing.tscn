@@ -74,4 +74,13 @@ texture = ExtResource("9_appnl")
 position = Vector2(-109, -152)
 texture = ExtResource("10_6dkih")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=530704203]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=2126787344]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 208.0
+offset_bottom = 27.0
+text = "Time: 0 seconds"
+
 [connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
