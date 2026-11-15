@@ -19,3 +19,12 @@ func _on_bottom_wall_area_entered(area: Area2D) -> void:
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	velocity = -velocity
 	move_and_collide(velocity*0.1)
+
+
+
+func _on_sheep_1_area_area_entered(area: Area2D) -> void:
+	move_and_collide(-velocity*0.1)
+
+
+func _on_sheep_3_area_area_entered(area: Area2D) -> void:
+	move_and_collide(-velocity*0.15)
