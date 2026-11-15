@@ -27,9 +27,13 @@ height = 151.98877
 
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mnjc7"]
-radius = 22.018188
-height = 92.03552
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8v0ao"]
+radius = 13.999695
+height = 67.99872
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ss806"]
+radius = 14.99884
+height = 36.071777
 
 [node name="Background" type="Node2D" unique_id=953697776]
 position = Vector2(21, 14)
@@ -103,9 +107,14 @@ position = Vector2(-109, -152)
 texture = ExtResource("10_6dkih")
 
 [node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3" unique_id=380219906]
-position = Vector2(400.00003, 486.00003)
+position = Vector2(406, 492.00003)
 rotation = 1.5770139
-shape = SubResource("CapsuleShape2D_mnjc7")
+shape = SubResource("CapsuleShape2D_8v0ao")
+
+[node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3/Sheep3Collision" unique_id=115100053]
+position = Vector2(-24.81301, 30.15485)
+rotation = 1.5770139
+shape = SubResource("CapsuleShape2D_ss806")
 
 [node name="RestartNode" type="Node2D" parent="." unique_id=1838893094]
 position = Vector2(483, 469)
