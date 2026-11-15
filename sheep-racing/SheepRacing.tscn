@@ -45,7 +45,8 @@ position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
 [node name="Sheep Body 2" type="Sprite2D" parent="." unique_id=552016128]
-position = Vector2(1537, 493)
+position = Vector2(410, 451)
+scale = Vector2(0.3544776, 0.25733334)
 texture = ExtResource("6_mihmo")
 
 [node name="Sheep Head 2" type="Sprite2D" parent="Sheep Body 2" unique_id=770454328]
