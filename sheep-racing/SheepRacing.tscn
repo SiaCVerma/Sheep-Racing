@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
 [ext_resource type="Texture2D" uid="uid://xvwpcob603iw" path="res://Sheep Body 3.png" id="9_appnl"]
 [ext_resource type="Texture2D" uid="uid://bt68t8ub7qep3" path="res://Sheep Head 3.png" id="10_6dkih"]
+[ext_resource type="Script" uid="uid://cjc2hot3anry0" path="res://label.gd" id="12_eno16"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
 size = Vector2(50.017357, 50.01548)
@@ -84,5 +85,6 @@ offset_top = 4.0
 offset_right = 208.0
 offset_bottom = 27.0
 text = "Time: 0 seconds"
+script = ExtResource("12_eno16")
 
 [connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
