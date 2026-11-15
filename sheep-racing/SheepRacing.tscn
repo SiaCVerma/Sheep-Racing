@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://crx625oj4txo6" path="res://grass_boundary.gd" id="2_x0hn4"]
 [ext_resource type="Texture2D" uid="uid://bd6u2vcq8e4mp" path="res://Sheep Body.png" id="4_bfwgu"]
 [ext_resource type="Texture2D" uid="uid://b8qilatd04qbn" path="res://Sheep Head.png" id="5_v36m6"]
+[ext_resource type="Texture2D" uid="uid://cawdi6uj6yex1" path="res://Sheep Body 2.png" id="6_mihmo"]
+[ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
 size = Vector2(50.017357, 50.01548)
@@ -39,5 +41,13 @@ texture = ExtResource("4_bfwgu")
 [node name="Sheep Head" type="Sprite2D" parent="Sheep Body" unique_id=1165322609 groups=["Sheep"]]
 position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
+
+[node name="Sheep Body 2" type="Sprite2D" parent="." unique_id=552016128]
+position = Vector2(1537, 493)
+texture = ExtResource("6_mihmo")
+
+[node name="Sheep Head 2" type="Sprite2D" parent="Sheep Body 2" unique_id=770454328]
+position = Vector2(-198, -131)
+texture = ExtResource("7_snn4q")
 
 [connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
