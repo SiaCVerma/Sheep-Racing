@@ -95,9 +95,9 @@ position = Vector2(414.89883, 417.5239)
 rotation = -1.5513225
 shape = SubResource("RectangleShape2D_eno16")
 
-[node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2/Sheep2Collision" unique_id=616050044]
-position = Vector2(18.256435, -65.26667)
-rotation = -1.5513225
+[node name="Sheep2Collision2" type="CollisionShape2D" parent="Sheep 2" unique_id=616050044]
+position = Vector2(350.00003, 398)
+rotation = -3.102645
 shape = SubResource("CircleShape2D_3q2r1")
 
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
@@ -118,9 +118,9 @@ position = Vector2(406, 492.00003)
 rotation = 1.5770139
 shape = SubResource("CapsuleShape2D_8v0ao")
 
-[node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3/Sheep3Collision" unique_id=115100053]
-position = Vector2(-24.81301, 30.15485)
-rotation = 1.5770139
+[node name="Sheep3Collision2" type="CollisionShape2D" parent="Sheep 3" unique_id=115100053]
+position = Vector2(376, 467)
+rotation = -3.1291575
 shape = SubResource("CapsuleShape2D_ss806")
 
 [connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
