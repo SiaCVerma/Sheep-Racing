@@ -18,6 +18,9 @@ size = Vector2(50.017357, 50.01548)
 
 [sub_resource type="GDScript" id="GDScript_appnl"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rsva"]
+size = Vector2(50, 53)
+
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
 [node name="Background" type="Node2D" unique_id=953697776]
@@ -57,6 +60,8 @@ position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
 [node name="Sheep1Collision" type="CollisionShape2D" parent="Sheep 1" unique_id=1644890084]
+position = Vector2(522, 417)
+shape = SubResource("RectangleShape2D_4rsva")
 
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
 script = ExtResource("7_6dkih")
