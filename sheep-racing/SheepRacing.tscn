@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bt6ypt5k4aeob"]
 
+[ext_resource type="AudioStream" uid="uid://vvoo88irme2e" path="res://Monkeys_Spinning_Monkeys_-_Remix_256kbps.mp3" id="1_3q2r1"]
 [ext_resource type="Texture2D" uid="uid://b3exk0fo5sdej" path="res://grass.jpg" id="1_hnpee"]
 [ext_resource type="Texture2D" uid="uid://dyiac8mvnv4sp" path="res://track.png" id="2_ab0tp"]
 [ext_resource type="Script" uid="uid://dkov5yv2v3n5p" path="res://sheep_1.gd" id="4_6dkih"]
@@ -59,6 +60,10 @@ size = Vector2(401.08868, 384.7827)
 [node name="Background" type="Node2D" unique_id=953697776]
 position = Vector2(21, 14)
 
+[node name="MonkeysSpinningMonkeysRemix256Kbps" type="AudioStreamPlayer" parent="." unique_id=299179994]
+stream = ExtResource("1_3q2r1")
+autoplay = true
+
 [node name="Grass" type="Sprite2D" parent="." unique_id=731676323]
 position = Vector2(559, 313)
 scale = Vector2(4.608, 2.5839999)
@@ -70,6 +75,7 @@ scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
 
 [node name="Sheep 1" type="CharacterBody2D" parent="." unique_id=413720196]
+position = Vector2(18, 6)
 script = ExtResource("4_6dkih")
 
 [node name="Sheep Body 1" type="Sprite2D" parent="Sheep 1" unique_id=1439060913 groups=["Sheep"]]
@@ -94,6 +100,7 @@ position = Vector2(522, 414)
 shape = SubResource("RectangleShape2D_kgu1u")
 
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
+position = Vector2(-1, 59)
 script = ExtResource("7_6dkih")
 
 [node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
@@ -123,6 +130,7 @@ position = Vector2(389.25, 408)
 shape = SubResource("RectangleShape2D_cxkqh")
 
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
+position = Vector2(-141, 43)
 script = ExtResource("10_4rsva")
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
