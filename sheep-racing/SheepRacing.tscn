@@ -8,21 +8,38 @@
 [ext_resource type="Texture2D" uid="uid://cawdi6uj6yex1" path="res://Sheep Body 2.png" id="6_mihmo"]
 [ext_resource type="Script" uid="uid://bsfglc4kkibca" path="res://sheep_2.gd" id="7_6dkih"]
 [ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
+[ext_resource type="Script" uid="uid://b48ul5y0r35bt" path="res://sheep_1_area.gd" id="8_3q2r1"]
 [ext_resource type="Texture2D" uid="uid://xvwpcob603iw" path="res://Sheep Body 3.png" id="9_appnl"]
 [ext_resource type="Script" uid="uid://efdqd82ixl20" path="res://sheep_3.gd" id="10_4rsva"]
 [ext_resource type="Texture2D" uid="uid://bt68t8ub7qep3" path="res://Sheep Head 3.png" id="10_6dkih"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://wt1hisph15qp" path="res://Wall.png" id="13_4rsva"]
+=======
+
+[sub_resource type="GDScript" id="GDScript_4rsva"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
+size = Vector2(50.017357, 50.01548)
+>>>>>>> Stashed changes
 
 [sub_resource type="GDScript" id="GDScript_appnl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l5mbh"]
 radius = 21.023796
 
+[sub_resource type="GDScript" id="GDScript_3q2r1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgu1u"]
+size = Vector2(46, 48)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eno16"]
 size = Vector2(43.04357, 106.97972)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3q2r1"]
 radius = 32.01563
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxkqh"]
+size = Vector2(159, 83)
 
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
@@ -34,6 +51,7 @@ height = 67.99872
 radius = 14.99884
 height = 36.071777
 
+<<<<<<< Updated upstream
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ee38"]
 size = Vector2(402.6714, 360.96252)
 
@@ -45,6 +63,10 @@ size = Vector2(387.31738, 375.29047)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_27bjw"]
 size = Vector2(401.08868, 384.7827)
+=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrgg5"]
+size = Vector2(97, 77)
+>>>>>>> Stashed changes
 
 [node name="Background" type="Node2D" unique_id=953697776]
 position = Vector2(21, 14)
@@ -54,6 +76,19 @@ position = Vector2(559, 313)
 scale = Vector2(4.608, 2.5839999)
 texture = ExtResource("1_hnpee")
 
+<<<<<<< Updated upstream
+=======
+[node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863]
+visible = false
+position = Vector2(-138.45486, -105.263176)
+scale = Vector2(5, 5)
+script = SubResource("GDScript_4rsva")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/GrassBoundary" unique_id=20077862]
+position = Vector2(27.682295, 21.044895)
+shape = SubResource("RectangleShape2D_bcok0")
+
+>>>>>>> Stashed changes
 [node name="Track" type="Sprite2D" parent="." unique_id=948321257]
 position = Vector2(559.00006, 312)
 scale = Vector2(1.0024999, 0.9367088)
@@ -75,6 +110,16 @@ texture = ExtResource("5_v36m6")
 [node name="Sheep1Collision" type="CollisionShape2D" parent="Sheep 1" unique_id=1644890084]
 position = Vector2(522, 411)
 shape = SubResource("CircleShape2D_l5mbh")
+script = SubResource("GDScript_3q2r1")
+
+[node name="Sheep1Area" type="Area2D" parent="Sheep 1" unique_id=200179982 node_paths=PackedStringArray("sheep3", "sheep2")]
+script = ExtResource("8_3q2r1")
+sheep3 = NodePath("../../Sheep 3")
+sheep2 = NodePath("../../Sheep 2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 1/Sheep1Area" unique_id=2001988738]
+position = Vector2(522, 413)
+shape = SubResource("RectangleShape2D_kgu1u")
 
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
 script = ExtResource("7_6dkih")
@@ -99,6 +144,12 @@ position = Vector2(350.00003, 398)
 rotation = -3.102645
 shape = SubResource("CircleShape2D_3q2r1")
 
+[node name="Sheep2Area" type="Area2D" parent="Sheep 2" unique_id=1782757936]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 2/Sheep2Area" unique_id=811020329]
+position = Vector2(387.5, 407.5)
+shape = SubResource("RectangleShape2D_cxkqh")
+
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
 script = ExtResource("10_4rsva")
 
@@ -122,6 +173,7 @@ position = Vector2(376, 467)
 rotation = -3.1291575
 shape = SubResource("CapsuleShape2D_ss806")
 
+<<<<<<< Updated upstream
 [node name="Left Wall" type="Area2D" parent="." unique_id=788985066]
 position = Vector2(18, 311.75)
 scale = Vector2(0.17632242, 1.7453333)
@@ -174,3 +226,13 @@ shape = SubResource("RectangleShape2D_27bjw")
 
 [connection signal="area_entered" from="Left Wall" to="Sheep 1" method="_on_left_wall_area_entered"]
 [connection signal="area_entered" from="Top Wall" to="Sheep 1" method="_on_top_wall_area_entered"]
+=======
+[node name="Sheep3Area" type="Area2D" parent="Sheep 3" unique_id=455537570]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 3/Sheep3Area" unique_id=2016926766]
+position = Vector2(394.5, 489.5)
+shape = SubResource("RectangleShape2D_lrgg5")
+
+[connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
+[connection signal="body_entered" from="Sheep 1/Sheep1Area" to="Grass/GrassBoundary" method="_on_sheep_1_area_body_entered"]
+>>>>>>> Stashed changes
