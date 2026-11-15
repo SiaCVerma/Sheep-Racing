@@ -18,11 +18,17 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_l5mbh"]
 radius = 21.023796
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgu1u"]
+size = Vector2(48, 55)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eno16"]
 size = Vector2(43.04357, 106.97972)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3q2r1"]
 radius = 32.01563
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxkqh"]
+size = Vector2(156.5, 76)
 
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
@@ -33,6 +39,9 @@ height = 67.99872
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ss806"]
 radius = 14.99884
 height = 36.071777
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrgg5"]
+size = Vector2(106, 71)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ee38"]
 size = Vector2(402.6714, 360.96252)
@@ -76,6 +85,12 @@ texture = ExtResource("5_v36m6")
 position = Vector2(522, 411)
 shape = SubResource("CircleShape2D_l5mbh")
 
+[node name="Sheep1Area" type="Area2D" parent="Sheep 1" unique_id=69308671]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 1/Sheep1Area" unique_id=2095774687]
+position = Vector2(524, 416.5)
+shape = SubResource("RectangleShape2D_kgu1u")
+
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
 script = ExtResource("7_6dkih")
 
@@ -99,6 +114,12 @@ position = Vector2(350.00003, 398)
 rotation = -3.102645
 shape = SubResource("CircleShape2D_3q2r1")
 
+[node name="Sheep2Area" type="Area2D" parent="Sheep 2" unique_id=577060921]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 2/Sheep2Area" unique_id=1303695604]
+position = Vector2(387.75, 408)
+shape = SubResource("RectangleShape2D_cxkqh")
+
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
 script = ExtResource("10_4rsva")
 
@@ -121,6 +142,12 @@ shape = SubResource("CapsuleShape2D_8v0ao")
 position = Vector2(376, 467)
 rotation = -3.1291575
 shape = SubResource("CapsuleShape2D_ss806")
+
+[node name="Sheep3Area" type="Area2D" parent="Sheep 3" unique_id=545243591]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 3/Sheep3Area" unique_id=1540468662]
+position = Vector2(401, 489.5)
+shape = SubResource("RectangleShape2D_lrgg5")
 
 [node name="Left Wall" type="Area2D" parent="." unique_id=788985066]
 position = Vector2(18, 311.75)
