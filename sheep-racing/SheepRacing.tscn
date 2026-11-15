@@ -123,7 +123,4 @@ position = Vector2(-24.81301, 30.15485)
 rotation = 1.5770139
 shape = SubResource("CapsuleShape2D_ss806")
 
-[node name="RestartNode" type="Node2D" parent="." unique_id=1838893094]
-position = Vector2(483, 469)
-
 [connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
