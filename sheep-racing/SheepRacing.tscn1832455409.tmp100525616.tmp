@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://bt6ypt5k4aeob"]
+
+[ext_resource type="Texture2D" uid="uid://b3exk0fo5sdej" path="res://grass.jpg" id="1_hnpee"]
+[ext_resource type="Texture2D" uid="uid://dyiac8mvnv4sp" path="res://track.png" id="2_ab0tp"]
+[ext_resource type="Script" uid="uid://crx625oj4txo6" path="res://grass_boundary.gd" id="2_x0hn4"]
+[ext_resource type="Script" uid="uid://dkov5yv2v3n5p" path="res://sheep_1.gd" id="4_6dkih"]
+[ext_resource type="Texture2D" uid="uid://bd6u2vcq8e4mp" path="res://Sheep Body.png" id="4_bfwgu"]
+[ext_resource type="Texture2D" uid="uid://b8qilatd04qbn" path="res://Sheep Head.png" id="5_v36m6"]
+[ext_resource type="Texture2D" uid="uid://cawdi6uj6yex1" path="res://Sheep Body 2.png" id="6_mihmo"]
+[ext_resource type="Script" uid="uid://bsfglc4kkibca" path="res://sheep_2.gd" id="7_6dkih"]
+[ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
+[ext_resource type="Texture2D" uid="uid://xvwpcob603iw" path="res://Sheep Body 3.png" id="9_appnl"]
+[ext_resource type="Script" uid="uid://efdqd82ixl20" path="res://sheep_3.gd" id="10_4rsva"]
+[ext_resource type="Texture2D" uid="uid://bt68t8ub7qep3" path="res://Sheep Head 3.png" id="10_6dkih"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
+size = Vector2(50.017357, 50.01548)
+
+[sub_resource type="GDScript" id="GDScript_appnl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l5mbh"]
+radius = 21.023796
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eno16"]
+size = Vector2(43.04357, 106.97972)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3q2r1"]
+radius = 32.01563
+
+[sub_resource type="GDScript" id="GDScript_eno16"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8v0ao"]
+radius = 13.999695
+height = 67.99872
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ss806"]
+radius = 14.99884
+height = 36.071777
+
+[node name="Background" type="Node2D" unique_id=953697776]
+position = Vector2(21, 14)
+
+[node name="Grass" type="Sprite2D" parent="." unique_id=731676323]
+position = Vector2(559, 313)
+scale = Vector2(4.608, 2.5839999)
+texture = ExtResource("1_hnpee")
+
+[node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863]
+visible = false
+position = Vector2(-138.45486, -105.263176)
+scale = Vector2(5, 5)
+script = ExtResource("2_x0hn4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/GrassBoundary" unique_id=20077862]
+position = Vector2(27.682295, 21.044895)
+shape = SubResource("RectangleShape2D_bcok0")
+
+[node name="Track" type="Sprite2D" parent="." unique_id=948321257]
+position = Vector2(559.00006, 312)
+scale = Vector2(1.0024999, 0.9367088)
+texture = ExtResource("2_ab0tp")
+
+[node name="Sheep 1" type="CharacterBody2D" parent="." unique_id=413720196]
+script = ExtResource("4_6dkih")
+
+[node name="Sheep Body 1" type="Sprite2D" parent="Sheep 1" unique_id=1439060913 groups=["Sheep"]]
+position = Vector2(520, 416.99994)
+scale = Vector2(0.1465755, 0.14266665)
+texture = ExtResource("4_bfwgu")
+script = SubResource("GDScript_appnl")
+
+[node name="Sheep Head 1" type="Sprite2D" parent="Sheep 1/Sheep Body 1" unique_id=1165322609 groups=["Sheep"]]
+position = Vector2(-36, -32)
+texture = ExtResource("5_v36m6")
+
+[node name="Sheep1Collision" type="CollisionShape2D" parent="Sheep 1" unique_id=1644890084]
+position = Vector2(522, 411)
+shape = SubResource("CircleShape2D_l5mbh")
+
+[node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
+script = ExtResource("7_6dkih")
+
+[node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
+position = Vector2(401, 422)
+scale = Vector2(0.25373122, 0.17399998)
+texture = ExtResource("6_mihmo")
+
+[node name="Sheep Head 2" type="Sprite2D" parent="Sheep 2/Sheep Body 2" unique_id=770454328]
+position = Vector2(-198.00006, -130.99988)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("7_snn4q")
+
+[node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2" unique_id=1971860484]
+position = Vector2(414.89883, 417.5239)
+rotation = -1.5513225
+shape = SubResource("RectangleShape2D_eno16")
+
+[node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2/Sheep2Collision" unique_id=616050044]
+position = Vector2(18.256435, -65.26667)
+rotation = -1.5513225
+shape = SubResource("CircleShape2D_3q2r1")
+
+[node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
+script = ExtResource("10_4rsva")
+
+[node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
+position = Vector2(400.00003, 495)
+scale = Vector2(0.22117534, 0.19533335)
+texture = ExtResource("9_appnl")
+script = SubResource("GDScript_eno16")
+
+[node name="Sheep Head 3" type="Sprite2D" parent="Sheep 3/Sheep Body 3" unique_id=991186293]
+position = Vector2(-109, -152)
+texture = ExtResource("10_6dkih")
+
+[node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3" unique_id=380219906]
+position = Vector2(406, 492.00003)
+rotation = 1.5770139
+shape = SubResource("CapsuleShape2D_8v0ao")
+
+[node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3/Sheep3Collision" unique_id=115100053]
+position = Vector2(-24.81301, 30.15485)
+rotation = 1.5770139
+shape = SubResource("CapsuleShape2D_ss806")
+
+[connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
