@@ -63,6 +63,11 @@ texture = ExtResource("7_snn4q")
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
 position = Vector2(742, 752)
+=======
+[node name="Sheep Body 3" type="Sprite2D" parent="." unique_id=808177148]
+position = Vector2(400.00003, 495)
+scale = Vector2(0.22117534, 0.19533335)
+>>>>>>> 56fe9bff3a4a6d5018d8453f9dc99328b8753ba5
 texture = ExtResource("9_appnl")
 
 [node name="Sheep Head 3" type="Sprite2D" parent="Sheep 3/Sheep Body 3" unique_id=991186293]
