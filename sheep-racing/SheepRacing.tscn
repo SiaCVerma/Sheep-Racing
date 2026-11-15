@@ -200,4 +200,14 @@ scale = Vector2(0.99999976, 0.99999905)
 shape = SubResource("RectangleShape2D_27bjw")
 
 [connection signal="area_entered" from="Left Wall" to="Sheep 1" method="_on_left_wall_area_entered"]
+[connection signal="area_entered" from="Left Wall" to="Sheep 2" method="_on_left_wall_area_entered"]
+[connection signal="area_entered" from="Left Wall" to="Sheep 3" method="_on_left_wall_area_entered"]
 [connection signal="area_entered" from="Top Wall" to="Sheep 1" method="_on_top_wall_area_entered"]
+[connection signal="area_entered" from="Top Wall" to="Sheep 2" method="_on_top_wall_area_entered"]
+[connection signal="area_entered" from="Top Wall" to="Sheep 3" method="_on_top_wall_area_entered"]
+[connection signal="area_entered" from="Right Wall" to="Sheep 1" method="_on_right_wall_area_entered"]
+[connection signal="area_entered" from="Right Wall" to="Sheep 2" method="_on_right_wall_area_entered"]
+[connection signal="area_entered" from="Right Wall" to="Sheep 3" method="_on_right_wall_area_entered"]
+[connection signal="area_entered" from="Bottom Wall" to="Sheep 1" method="_on_bottom_wall_area_entered"]
+[connection signal="area_entered" from="Bottom Wall" to="Sheep 2" method="_on_bottom_wall_area_entered"]
+[connection signal="area_entered" from="Bottom Wall" to="Sheep 3" method="_on_bottom_wall_area_entered"]
