@@ -18,18 +18,18 @@ size = Vector2(50.017357, 50.01548)
 
 [sub_resource type="GDScript" id="GDScript_appnl"]
 
-<<<<<<< HEAD
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rsva"]
-size = Vector2(50, 53)
-=======
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dkih"]
-size = Vector2(161, 72)
->>>>>>> 61a72492f74ba22fbe2c6468753cb6068f9cd1ec
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbqww"]
+size = Vector2(50, 42)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_orljh"]
+radius = 27.014374
+height = 151.98877
 
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eno16"]
-size = Vector2(114.5, 70)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mnjc7"]
+radius = 22.018188
+height = 92.03552
 
 [node name="Background" type="Node2D" unique_id=953697776]
 position = Vector2(21, 14)
@@ -68,14 +68,14 @@ position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
 [node name="Sheep1Collision" type="CollisionShape2D" parent="Sheep 1" unique_id=1644890084]
-position = Vector2(522, 417)
-shape = SubResource("RectangleShape2D_4rsva")
+position = Vector2(522, 411)
+shape = SubResource("RectangleShape2D_sbqww")
 
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
 script = ExtResource("7_6dkih")
 
 [node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
-position = Vector2(424.99997, 460.62494)
+position = Vector2(401, 422)
 scale = Vector2(0.25373122, 0.17399998)
 texture = ExtResource("6_mihmo")
 
@@ -85,8 +85,9 @@ scale = Vector2(1, 0.99999994)
 texture = ExtResource("7_snn4q")
 
 [node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2" unique_id=1971860484]
-position = Vector2(410.5, 445)
-shape = SubResource("RectangleShape2D_6dkih")
+position = Vector2(395, 413)
+rotation = -1.5513225
+shape = SubResource("CapsuleShape2D_orljh")
 
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
 script = ExtResource("10_4rsva")
@@ -102,8 +103,9 @@ position = Vector2(-109, -152)
 texture = ExtResource("10_6dkih")
 
 [node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3" unique_id=380219906]
-position = Vector2(400.25, 490)
-shape = SubResource("RectangleShape2D_eno16")
+position = Vector2(400.00003, 486.00003)
+rotation = 1.5770139
+shape = SubResource("CapsuleShape2D_mnjc7")
 
 [node name="RestartNode" type="Node2D" parent="." unique_id=1838893094]
 position = Vector2(483, 469)
