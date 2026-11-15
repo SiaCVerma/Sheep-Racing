@@ -25,10 +25,11 @@ position = Vector2(559, 313)
 scale = Vector2(4.608, 2.5839999)
 texture = ExtResource("1_hnpee")
 
-[node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863]
+[node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863 node_paths=PackedStringArray("center_node")]
 position = Vector2(-138.45486, -105.263176)
 scale = Vector2(5, 5)
 script = ExtResource("2_x0hn4")
+center_node = NodePath("../../RestartNode")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/GrassBoundary" unique_id=20077862]
 position = Vector2(27.682295, 21.044895)
@@ -52,6 +53,8 @@ script = SubResource("GDScript_appnl")
 position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
+[node name="Sheep1Collision" type="CollisionShape2D" parent="Sheep 1" unique_id=1644890084]
+
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
 script = ExtResource("7_6dkih")
 
@@ -65,6 +68,8 @@ position = Vector2(-198.00006, -130.99988)
 scale = Vector2(1, 0.99999994)
 texture = ExtResource("7_snn4q")
 
+[node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2" unique_id=1971860484]
+
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
@@ -75,6 +80,8 @@ texture = ExtResource("9_appnl")
 [node name="Sheep Head 3" type="Sprite2D" parent="Sheep 3/Sheep Body 3" unique_id=991186293]
 position = Vector2(-109, -152)
 texture = ExtResource("10_6dkih")
+
+[node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3" unique_id=380219906]
 
 [node name="RestartNode" type="Node2D" parent="." unique_id=1838893094]
 position = Vector2(483, 469)
