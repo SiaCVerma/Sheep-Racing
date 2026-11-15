@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://dkov5yv2v3n5p" path="res://sheep_1.gd" id="4_6dkih"]
 [ext_resource type="Texture2D" uid="uid://bd6u2vcq8e4mp" path="res://Sheep Body.png" id="4_bfwgu"]
 [ext_resource type="Texture2D" uid="uid://b8qilatd04qbn" path="res://Sheep Head.png" id="5_v36m6"]
+[ext_resource type="Script" uid="uid://b48ul5y0r35bt" path="res://sheep_1_area.gd" id="6_4rsva"]
 [ext_resource type="Texture2D" uid="uid://cawdi6uj6yex1" path="res://Sheep Body 2.png" id="6_mihmo"]
 [ext_resource type="Script" uid="uid://bsfglc4kkibca" path="res://sheep_2.gd" id="7_6dkih"]
 [ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
@@ -19,7 +20,7 @@
 radius = 21.023796
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgu1u"]
-size = Vector2(48, 55)
+size = Vector2(48, 58)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eno16"]
 size = Vector2(43.04357, 106.97972)
@@ -86,9 +87,10 @@ position = Vector2(522, 411)
 shape = SubResource("CircleShape2D_l5mbh")
 
 [node name="Sheep1Area" type="Area2D" parent="Sheep 1" unique_id=69308671]
+script = ExtResource("6_4rsva")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 1/Sheep1Area" unique_id=2095774687]
-position = Vector2(524, 416.5)
+[node name="Sheep1Col" type="CollisionShape2D" parent="Sheep 1/Sheep1Area" unique_id=2095774687]
+position = Vector2(522, 414)
 shape = SubResource("RectangleShape2D_kgu1u")
 
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
@@ -116,7 +118,7 @@ shape = SubResource("CircleShape2D_3q2r1")
 
 [node name="Sheep2Area" type="Area2D" parent="Sheep 2" unique_id=577060921]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 2/Sheep2Area" unique_id=1303695604]
+[node name="Sheep2Col" type="CollisionShape2D" parent="Sheep 2/Sheep2Area" unique_id=1303695604]
 position = Vector2(387.75, 408)
 shape = SubResource("RectangleShape2D_cxkqh")
 
@@ -145,7 +147,7 @@ shape = SubResource("CapsuleShape2D_ss806")
 
 [node name="Sheep3Area" type="Area2D" parent="Sheep 3" unique_id=545243591]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep 3/Sheep3Area" unique_id=1540468662]
+[node name="Sheep3Col" type="CollisionShape2D" parent="Sheep 3/Sheep3Area" unique_id=1540468662]
 position = Vector2(401, 489.5)
 shape = SubResource("RectangleShape2D_lrgg5")
 
