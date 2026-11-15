@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b3exk0fo5sdej" path="res://grass.jpg" id="1_hnpee"]
 [ext_resource type="Texture2D" uid="uid://dyiac8mvnv4sp" path="res://track.png" id="2_ab0tp"]
+[ext_resource type="Script" uid="uid://crx625oj4txo6" path="res://grass_boundary.gd" id="2_x0hn4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
 size = Vector2(50.017357, 50.01548)
@@ -17,12 +18,15 @@ texture = ExtResource("1_hnpee")
 [node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863]
 position = Vector2(-138.45486, -105.263176)
 scale = Vector2(5, 5)
+script = ExtResource("2_x0hn4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/GrassBoundary" unique_id=20077862]
 position = Vector2(27.682295, 21.044895)
 shape = SubResource("RectangleShape2D_bcok0")
 
 [node name="Track" type="Sprite2D" parent="." unique_id=948321257]
-position = Vector2(540, 294.00003)
+position = Vector2(559.00006, 312)
 scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
+
+[connection signal="body_exited" from="Grass/GrassBoundary" to="Grass/GrassBoundary" method="_on_body_exited"]
