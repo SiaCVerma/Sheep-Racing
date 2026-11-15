@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://crx625oj4txo6" path="res://grass_boundary.gd" id="2_x0hn4"]
 [ext_resource type="Script" uid="uid://dkov5yv2v3n5p" path="res://sheep_1.gd" id="4_6dkih"]
 [ext_resource type="Texture2D" uid="uid://bd6u2vcq8e4mp" path="res://Sheep Body.png" id="4_bfwgu"]
-[ext_resource type="Script" uid="uid://snluq2i8w8fj" path="res://sheep_body.gd" id="5_mihmo"]
 [ext_resource type="Texture2D" uid="uid://b8qilatd04qbn" path="res://Sheep Head.png" id="5_v36m6"]
 [ext_resource type="Texture2D" uid="uid://cawdi6uj6yex1" path="res://Sheep Body 2.png" id="6_mihmo"]
 [ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
@@ -14,6 +13,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
 size = Vector2(50.017357, 50.01548)
+
+[sub_resource type="GDScript" id="GDScript_appnl"]
 
 [node name="Background" type="Node2D" unique_id=953697776]
 position = Vector2(21, 14)
@@ -44,7 +45,7 @@ script = ExtResource("4_6dkih")
 position = Vector2(520, 416.99994)
 scale = Vector2(0.1465755, 0.14266665)
 texture = ExtResource("4_bfwgu")
-script = ExtResource("5_mihmo")
+script = SubResource("GDScript_appnl")
 
 [node name="Sheep Head 1" type="Sprite2D" parent="Sheep 1/Sheep Body 1" unique_id=1165322609 groups=["Sheep"]]
 position = Vector2(-36, -32)
