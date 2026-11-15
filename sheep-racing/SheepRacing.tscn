@@ -10,12 +10,15 @@
 [ext_resource type="Script" uid="uid://bsfglc4kkibca" path="res://sheep_2.gd" id="7_6dkih"]
 [ext_resource type="Texture2D" uid="uid://dsjprdulgepq3" path="res://Sheep Head 2.png" id="7_snn4q"]
 [ext_resource type="Texture2D" uid="uid://xvwpcob603iw" path="res://Sheep Body 3.png" id="9_appnl"]
+[ext_resource type="Script" uid="uid://efdqd82ixl20" path="res://sheep_3.gd" id="10_4rsva"]
 [ext_resource type="Texture2D" uid="uid://bt68t8ub7qep3" path="res://Sheep Head 3.png" id="10_6dkih"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bcok0"]
 size = Vector2(50.017357, 50.01548)
 
 [sub_resource type="GDScript" id="GDScript_appnl"]
+
+[sub_resource type="GDScript" id="GDScript_eno16"]
 
 [node name="Background" type="Node2D" unique_id=953697776]
 position = Vector2(21, 14)
@@ -71,11 +74,13 @@ texture = ExtResource("7_snn4q")
 [node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2" unique_id=1971860484]
 
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
+script = ExtResource("10_4rsva")
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
 position = Vector2(400.00003, 495)
 scale = Vector2(0.22117534, 0.19533335)
 texture = ExtResource("9_appnl")
+script = SubResource("GDScript_eno16")
 
 [node name="Sheep Head 3" type="Sprite2D" parent="Sheep 3/Sheep Body 3" unique_id=991186293]
 position = Vector2(-109, -152)
