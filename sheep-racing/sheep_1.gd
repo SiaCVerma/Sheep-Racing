@@ -7,7 +7,7 @@ func _physics_process(delta):
 func _on_left_wall_area_entered(area: Area2D) -> void:
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = -velocity
-	move_and_collide(velocity*0.02)
+	input_direction=0
 func _on_top_wall_area_entered(area: Area2D) -> void:
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = -velocity
