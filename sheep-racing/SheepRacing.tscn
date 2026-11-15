@@ -39,11 +39,11 @@ position = Vector2(559, 313)
 scale = Vector2(4.608, 2.5839999)
 texture = ExtResource("1_hnpee")
 
-[node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863 node_paths=PackedStringArray("center_node")]
+[node name="GrassBoundary" type="Area2D" parent="Grass" unique_id=1325443863]
+visible = false
 position = Vector2(-138.45486, -105.263176)
 scale = Vector2(5, 5)
 script = ExtResource("2_x0hn4")
-center_node = NodePath("../../RestartNode")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/GrassBoundary" unique_id=20077862]
 position = Vector2(27.682295, 21.044895)
