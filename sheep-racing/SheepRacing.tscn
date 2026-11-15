@@ -21,6 +21,10 @@ size = Vector2(50.017357, 50.01548)
 <<<<<<< HEAD
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rsva"]
 size = Vector2(50, 53)
+=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dkih"]
+size = Vector2(161, 72)
+>>>>>>> 61a72492f74ba22fbe2c6468753cb6068f9cd1ec
 
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
