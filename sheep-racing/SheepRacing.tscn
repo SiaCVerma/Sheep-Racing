@@ -32,8 +32,8 @@ scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
 
 [node name="Sheep Body" type="Sprite2D" parent="." unique_id=1439060913 groups=["Sheep"]]
-position = Vector2(1530, 350)
-scale = Vector2(0.99999994, 0.99999994)
+position = Vector2(520, 415.99997)
+scale = Vector2(0.1465755, 0.14266665)
 texture = ExtResource("4_bfwgu")
 
 [node name="Sheep Head" type="Sprite2D" parent="Sheep Body" unique_id=1165322609 groups=["Sheep"]]
