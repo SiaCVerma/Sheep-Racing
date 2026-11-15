@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b3exk0fo5sdej" path="res://grass.jpg" id="1_hnpee"]
 [ext_resource type="Texture2D" uid="uid://dyiac8mvnv4sp" path="res://track.png" id="2_ab0tp"]
 [ext_resource type="Script" uid="uid://crx625oj4txo6" path="res://grass_boundary.gd" id="2_x0hn4"]
+[ext_resource type="Script" uid="uid://dkov5yv2v3n5p" path="res://sheep_1.gd" id="4_6dkih"]
 [ext_resource type="Texture2D" uid="uid://bd6u2vcq8e4mp" path="res://Sheep Body.png" id="4_bfwgu"]
 [ext_resource type="Script" uid="uid://snluq2i8w8fj" path="res://sheep_body.gd" id="5_mihmo"]
 [ext_resource type="Texture2D" uid="uid://b8qilatd04qbn" path="res://Sheep Head.png" id="5_v36m6"]
@@ -37,6 +38,7 @@ scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
 
 [node name="Sheep 1" type="CharacterBody2D" parent="." unique_id=413720196]
+script = ExtResource("4_6dkih")
 
 [node name="Sheep Body 1" type="Sprite2D" parent="Sheep 1" unique_id=1439060913 groups=["Sheep"]]
 position = Vector2(520, 416.99994)
