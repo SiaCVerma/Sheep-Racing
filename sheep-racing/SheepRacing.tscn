@@ -47,7 +47,7 @@ position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
 [node name="Sheep Body 2" type="Sprite2D" parent="." unique_id=552016128]
-position = Vector2(411, 460)
+position = Vector2(397.99994, 464)
 scale = Vector2(0.3544776, 0.25733334)
 texture = ExtResource("6_mihmo")
 
