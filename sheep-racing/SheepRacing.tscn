@@ -59,6 +59,7 @@ texture = ExtResource("6_mihmo")
 position = Vector2(-198, -131)
 texture = ExtResource("7_snn4q")
 
+<<<<<<< HEAD
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=577569215]
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
