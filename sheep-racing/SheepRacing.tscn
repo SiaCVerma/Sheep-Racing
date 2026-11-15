@@ -57,8 +57,8 @@ texture = ExtResource("5_v36m6")
 script = ExtResource("7_6dkih")
 
 [node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
-position = Vector2(397.99994, 464)
-scale = Vector2(0.3544776, 0.25733334)
+position = Vector2(424.99997, 460.62494)
+scale = Vector2(0.25373122, 0.17399998)
 texture = ExtResource("6_mihmo")
 
 [node name="Sheep Head 2" type="Sprite2D" parent="Sheep 2/Sheep Body 2" unique_id=770454328]
