@@ -18,32 +18,32 @@
 [sub_resource type="GDScript" id="GDScript_appnl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l5mbh"]
-radius = 21.023796
+radius = 12.0415945
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgu1u"]
-size = Vector2(48, 58)
+size = Vector2(25, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eno16"]
-size = Vector2(43.04357, 106.97972)
+size = Vector2(30.286404, 65.66271)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3q2r1"]
-radius = 32.01563
+radius = 19.000004
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxkqh"]
-size = Vector2(159.5, 76)
+size = Vector2(101.875, 48)
 
 [sub_resource type="GDScript" id="GDScript_eno16"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8v0ao"]
 radius = 13.999695
-height = 67.99872
+height = 41.999268
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ss806"]
-radius = 14.99884
-height = 36.071777
+radius = 10.011688
+height = 20.023376
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrgg5"]
-size = Vector2(106, 71)
+size = Vector2(50.5, 40.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ee38"]
 size = Vector2(402.6714, 360.96252)
@@ -75,12 +75,12 @@ scale = Vector2(1.0024999, 0.9367088)
 texture = ExtResource("2_ab0tp")
 
 [node name="Sheep 1" type="CharacterBody2D" parent="." unique_id=413720196]
-position = Vector2(18, 6)
+position = Vector2(8, 23)
 script = ExtResource("4_6dkih")
 
 [node name="Sheep Body 1" type="Sprite2D" parent="Sheep 1" unique_id=1439060913 groups=["Sheep"]]
-position = Vector2(520, 416.99994)
-scale = Vector2(0.1465755, 0.14266665)
+position = Vector2(507.62497, 404.62497)
+scale = Vector2(0.078767076, 0.07666679)
 texture = ExtResource("4_bfwgu")
 script = SubResource("GDScript_appnl")
 
@@ -89,23 +89,23 @@ position = Vector2(-36, -32)
 texture = ExtResource("5_v36m6")
 
 [node name="Sheep1Collision" type="CollisionShape2D" parent="Sheep 1" unique_id=1644890084]
-position = Vector2(522, 411)
+position = Vector2(508, 402)
 shape = SubResource("CircleShape2D_l5mbh")
 
 [node name="Sheep1Area" type="Area2D" parent="Sheep 1" unique_id=69308671]
 script = ExtResource("6_4rsva")
 
 [node name="Sheep1Col" type="CollisionShape2D" parent="Sheep 1/Sheep1Area" unique_id=2095774687]
-position = Vector2(522, 414)
+position = Vector2(508, 403)
 shape = SubResource("RectangleShape2D_kgu1u")
 
 [node name="Sheep 2" type="CharacterBody2D" parent="." unique_id=1217366827]
-position = Vector2(-1, 59)
+position = Vector2(86, 64)
 script = ExtResource("7_6dkih")
 
 [node name="Sheep Body 2" type="Sprite2D" parent="Sheep 2" unique_id=552016128]
-position = Vector2(401, 422)
-scale = Vector2(0.25373122, 0.17399998)
+position = Vector2(370.50003, 408.6875)
+scale = Vector2(0.13992538, 0.10300005)
 texture = ExtResource("6_mihmo")
 
 [node name="Sheep Head 2" type="Sprite2D" parent="Sheep 2/Sheep Body 2" unique_id=770454328]
@@ -114,28 +114,28 @@ scale = Vector2(1, 0.99999994)
 texture = ExtResource("7_snn4q")
 
 [node name="Sheep2Collision" type="CollisionShape2D" parent="Sheep 2" unique_id=1971860484]
-position = Vector2(414.89883, 417.5239)
+position = Vector2(380, 409)
 rotation = -1.5513225
 shape = SubResource("RectangleShape2D_eno16")
 
 [node name="Sheep2Collision2" type="CollisionShape2D" parent="Sheep 2" unique_id=616050044]
-position = Vector2(350.00003, 398)
+position = Vector2(342.00003, 395.00003)
 rotation = -3.102645
 shape = SubResource("CircleShape2D_3q2r1")
 
 [node name="Sheep2Area" type="Area2D" parent="Sheep 2" unique_id=577060921]
 
 [node name="Sheep2Col" type="CollisionShape2D" parent="Sheep 2/Sheep2Area" unique_id=1303695604]
-position = Vector2(389.25, 408)
+position = Vector2(366, 402)
 shape = SubResource("RectangleShape2D_cxkqh")
 
 [node name="Sheep 3" type="CharacterBody2D" parent="." unique_id=1614356314]
-position = Vector2(-141, 43)
+position = Vector2(19, 49)
 script = ExtResource("10_4rsva")
 
 [node name="Sheep Body 3" type="Sprite2D" parent="Sheep 3" unique_id=808177148]
-position = Vector2(400.00003, 495)
-scale = Vector2(0.22117534, 0.19533335)
+position = Vector2(359.93753, 467.3125)
+scale = Vector2(0.10615314, 0.08700002)
 texture = ExtResource("9_appnl")
 script = SubResource("GDScript_eno16")
 
@@ -144,19 +144,19 @@ position = Vector2(-109, -152)
 texture = ExtResource("10_6dkih")
 
 [node name="Sheep3Collision" type="CollisionShape2D" parent="Sheep 3" unique_id=380219906]
-position = Vector2(406, 492.00003)
+position = Vector2(364, 471.00003)
 rotation = 1.5770139
 shape = SubResource("CapsuleShape2D_8v0ao")
 
 [node name="Sheep3Collision2" type="CollisionShape2D" parent="Sheep 3" unique_id=115100053]
-position = Vector2(376, 467)
+position = Vector2(347, 455.00003)
 rotation = -3.1291575
 shape = SubResource("CapsuleShape2D_ss806")
 
 [node name="Sheep3Area" type="Area2D" parent="Sheep 3" unique_id=545243591]
 
 [node name="Sheep3Col" type="CollisionShape2D" parent="Sheep 3/Sheep3Area" unique_id=1540468662]
-position = Vector2(401, 489.5)
+position = Vector2(358.75, 465.625)
 shape = SubResource("RectangleShape2D_lrgg5")
 
 [node name="Left Wall" type="Area2D" parent="." unique_id=788985066]
